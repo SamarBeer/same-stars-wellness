@@ -1,0 +1,171 @@
+/* ======================================================
+   COLOR SYSTEM – PROFESSIONAL WELLNESS (NON-AI LOOK)
+   ====================================================== */
+:root {
+  /* Backgrounds */
+  --bg-main: #f6f5f2;        /* warm off-white */
+  --bg-section: #ffffff;    /* clean white */
+  --bg-card: #ffffff;       /* card white */
+
+  /* Accents */
+  --accent-primary: #6b9080;   /* sage green */
+  --accent-secondary: #c8ad7f; /* soft sand / gold */
+
+  /* Text */
+  --text-main: #2f3e46;     /* deep warm gray */
+  --text-muted: #6c757d;    /* muted neutral */
+}
+
+/* ======================================================
+   GLOBAL STYLES
+   ====================================================== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+/* ======================================================
+   HEADER / HERO
+   ====================================================== */
+header {
+  padding: 56px 20px 48px;
+  text-align: center;
+  background: var(--bg-section);
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.site-logo {
+  height: 300px;
+  width: auto;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+  color: var(--accent-primary);
+}
+
+.subtitle {
+  margin-top: 14px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text-muted);
+}
+
+/* ======================================================
+   SECTIONS
+   ====================================================== */
+section {
+  padding: 48px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+/* ======================================================
+   GRID SYSTEM
+   ====================================================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.offers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 22px;
+}
+
+/* ======================================================
+   CARDS (THERAPIES & PROMOTIONS)
+   ====================================================== */
+.card {
+  background: var(--bg-card);
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: var(--text-main);
+}
+
+.card p {
+  margin: 8px 0;
+  color: var(--text-main);
+}
+
+.card ul {
+  padding-left: 18px;
+  margin: 8px 0;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+/* ======================================================
+   PROMOTIONS
+   ====================================================== */
+.promo-tag {
+  font-size: 12px;
+  margin: 0 0 8px;
+  color: var(--accent-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.promo-title {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
+footer {
+  background: #f0eee9;
+  text-align: center;
+  padding: 32px 20px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ======================================================
+   SMALL UTILITY CLASSES (OPTIONAL)
+   ====================================================== */
+.muted-text {
+  color: var(--text-muted);
+}
+
+.no-margin {
+  margin: 0;
+}
